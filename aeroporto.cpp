@@ -53,12 +53,16 @@ int main()
 
 	for(int i =0; i<quantTest -1 ;i++)
 	{
+		if(i > 0)
+		{
+			cout << endl <<endl;
+		}
 		cout << "Teste " << i +1 <<endl;
 		for(vector<int>::iterator it = vectorx[i].begin(); it != vectorx[i].end(); ++it)
 		{
 			cout << (*it) + 1 << " ";
 		}
-		cout << endl << endl;
+		
 	}
 	return 0;
 }
